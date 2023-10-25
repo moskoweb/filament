@@ -160,9 +160,9 @@ Action::make('updateAuthor')
     ])
 ```
 
-### Setting a modal heading, subheading, and button label
+### Setting a modal heading, subheading, size and button label
 
-You may customize the heading, subheading and button label of the modal:
+You may customize the heading, subheading, size and button label of the modal:
 
 ```php
 use Filament\Pages\Actions\Action;
@@ -172,6 +172,7 @@ Action::make('delete')
     ->requiresConfirmation()
     ->modalHeading('Delete posts')
     ->modalSubheading('Are you sure you\'d like to delete these posts? This cannot be undone.')
+    ->modalWidth('md')
     ->modalButton('Yes, delete them')
 ```
 
